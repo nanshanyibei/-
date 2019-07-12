@@ -1,5 +1,6 @@
 1、实现new方法  
 (1)、  
+```
 function A(name){  
 	this.name = name   
 }  
@@ -14,7 +15,9 @@ function ObjectFactory(){
 	return typeof ret === 'object' ? ret : obj  
 }  
 var a = ObjectFactory(A, 'svenzeng');  
+```
 (2)、   
+```
 function Person(name, age){  
 	this.name = name   
 	this.age = age   
@@ -27,3 +30,4 @@ function New(f){
 	}   
 }   
 var p1 = New(Person)('Jack', 25)
+```
