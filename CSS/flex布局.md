@@ -3,12 +3,12 @@
 Webkit内核浏览器：display: -webkit-flex/*Safari*/;display: flex  
 注意：设置为Flex布局之后，子元素的float,clear和vertical-align属性都将失效  
 
-1、基本概念  
+## 1、基本概念  
 水平是主轴和交叉的主轴，主轴开始的位置（与边框的交叉点）叫做main start，结束位置叫做  
 main end，交叉轴开始的位置叫做cross start，结束位置叫做cross end。  
 项目默认沿主轴排列，单个项目占据空间的位置叫做main size，交叉轴空间叫做cross size  
   
-2、容器的属性  
+## 2、容器的属性  
 flex-direction  
 flex-wrap  
 flex-flow  
@@ -55,7 +55,7 @@ space-around:每根轴线两侧的间隔都相等，轴线之间的间隔比轴�
 stretch(默认值):轴线沾满整个交叉轴   
 
 
-项目的属性：   
+## 项目的属性：   
   
 order属性：    
 order:<integer> 定义项目的排列顺序，数值越小，排列越靠前，默认为0   
