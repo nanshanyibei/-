@@ -3,12 +3,12 @@
 Webkit内核浏览器：display: -webkit-flex/*Safari*/;display: flex  
 注意：设置为Flex布局之后，子元素的float,clear和vertical-align属性都将失效  
 
-## 1、基本概念  
+1、基本概念  
 水平是主轴和交叉的主轴，主轴开始的位置（与边框的交叉点）叫做main start，结束位置叫做  
 main end，交叉轴开始的位置叫做cross start，结束位置叫做cross end。  
 项目默认沿主轴排列，单个项目占据空间的位置叫做main size，交叉轴空间叫做cross size  
   
-## 2、容器的属性  
+2、容器的属性  
 flex-direction  
 flex-wrap  
 flex-flow  
@@ -29,7 +29,7 @@ wrap-reverse：换行，第一行在下方
 
 flex-flow属性：  
 flwx-flow属性是flex-direction属性和flex-wrap属性的简写形式，默认值为row nowrap   
-flex-flow: <flex-direction> || <flex-wrap>  
+flex-flow: (flex-direction) || (flex-wrap)  
 
 justify-content属性：   
 flex-start(默认值):左对齐   
@@ -55,28 +55,28 @@ space-around:每根轴线两侧的间隔都相等，轴线之间的间隔比轴�
 stretch(默认值):轴线沾满整个交叉轴   
 
 
-## 项目的属性：   
+项目的属性：   
   
 order属性：    
-order:<integer> 定义项目的排列顺序，数值越小，排列越靠前，默认为0   
+order:(integer) 定义项目的排列顺序，数值越小，排列越靠前，默认为0   
     
 flex-grow属性：   
-flex-grow:<number> 项目的放大比例，默认为0，即如果存在剩余空间，也不放大   
+flex-grow:(number) 项目的放大比例，默认为0，即如果存在剩余空间，也不放大   
      
 flex-shrink属性：   
-flex-shrink:<number>项目的缩小比例，默认为1，即如果空间不足，该项目将缩小   
+flex-shrink: (number) 项目的缩小比例，默认为1，即如果空间不足，该项目将缩小   
 如果项目的flex-shrink属性都为1，当空间不足时，都将等比例缩小，如果一个项目的flex-shrink   
 属性都为0，其他项目都为1，则空间不足时，前者不缩小，负值对该属性无效     
 
 flex-basis属性：   
 定义在分配多余空间之前，项目占据的主轴空间，浏览器根据这个属性，计算主轴是否有多余空   
 间，她的默认值为auto，即项目的本来大小。   
-flex-basis:<length> | auto /*default auto*/   
+flex-basis: (length) | auto /*default auto*/   
 他可以设为跟width或height属性一样的值（如350px），即项目将占据固定空间    
    
 flex属性：    
 flex属性是flex-grow,flex-shrink和flex-basis的简写，默认值为0 1 auto,后两个属性可选。     
-flex: none | [<'flex-grow'><'flex-shrink'>?||<'flex-basis'>]    
+flex: none | [('flex-grow')('flex-shrink')?||('flex-basis')]    
 该属性有两个快捷值：auto(1 1 auto)和none(0 0 auto)    
    
 align-self属性：   
